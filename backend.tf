@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket  = "weeek7" #replace with your bucket
+    bucket  = "mygrace-s3-bucket" #replace with your bucket
     key     = "week10/ terraform.tfstate"
     region  = "us-east-1"
     encrypt = true
