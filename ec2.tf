@@ -6,8 +6,8 @@ resource "aws_instance" "server1" {
   availability_zone      = "${var.REGION}a"
   ami                    = "ami-0150ccaf51ab55a51"
   tags = {
-    name = "web1"
     name = var.ENVIRONMENT
+    
   }
 }
 #second ec2
