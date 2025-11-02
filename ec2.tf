@@ -3,7 +3,7 @@ resource "aws_instance" "server1" {
   user_data              = file("setup.sh")
   vpc_security_group_ids = [aws_security_group.sg-demo1.id]
   subnet_id              = aws_subnet.private1.id
-  availability_zone      = "${var.REGION}a"
+  availability_zone      = "us-east-1a"
   ami                    = "ami-0150ccaf51ab55a51"
   tags = {
     name = "web1"
